@@ -582,3 +582,12 @@ This may be due to some troubles with pulseaudio resampling. Please have a look 
 https://wiki.archlinux.org/index.php/Pu ... io_quality
 
 That's all for today.
+
+to get it autoconnect do the ffg
+
+install cron
+
+then
+
+sudo crontab -e
+@reboot /usr/bin/pulseaudio --start --verbose
